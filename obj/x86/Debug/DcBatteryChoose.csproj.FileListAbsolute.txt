@@ -1,0 +1,15 @@
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DcBatteryChoose.exe
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DcBatteryChoose.pdb
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DevExpress.Data.v14.2.dll
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DevExpress.Utils.v14.2.dll
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DevExpress.XtraBars.v14.2.dll
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DevExpress.XtraEditors.v14.2.dll
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DevExpress.XtraLayout.v14.2.dll
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DevExpress.XtraTreeList.v14.2.dll
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.csprojResolveAssemblyReference.cache
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.FrmMain.resources
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.Properties.Resources.resources
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.csproj.GenerateResource.Cache
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.exe.licenses
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.exe
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.pdb
