@@ -13,3 +13,7 @@ E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.cs
 E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.exe.licenses
 E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.exe
 E:\001_projects\DcBatteryChoose\DcBatteryChoose\obj\x86\Debug\DcBatteryChoose.pdb
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\NPOI.dll
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\NPOI.xml
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DcBatteryChoose.exe.config

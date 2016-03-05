@@ -45,7 +45,7 @@ namespace DcBatteryChoose
     }
     class LoadCollection
     {
-        public float StdVol { get; set; }
+        public double StdVol { get; set; }
         public int BarNum { get; set; } 
         public List<ChargeLoadInfo> LstLoadInfo{ get; set; }
 
@@ -62,57 +62,57 @@ namespace DcBatteryChoose
 
     class BarChooseInfo
     {
-        public float StdVol { get; set; }
-        public float SingelVol { get; set; }
-        public float CalNum { get; set; }
+        public double StdVol { get; set; }
+        public double SingelVol { get; set; }
+        public double CalNum { get; set; }
         public int ChooseNum { get; set; }
 
-        public float CtrlMax { get; set; }
-        public float PowerMax { get; set; }
-        public float AllMax { get; set; }
+        public double CtrlMax { get; set; }
+        public double PowerMax { get; set; }
+        public double AllMax { get; set; }
 
-        public float Ctrl { get; set; }
-        public float Power { get; set; }
-        public float All { get; set; }
+        public double Ctrl { get; set; }
+        public double Power { get; set; }
+        public double All { get; set; }
 
-        public float CtrlFinishMin { get; set; }
-        public float PowerFinishMin { get; set; }
-        public float AllFinishMin { get; set; }
+        public double CtrlFinishMin { get; set; }
+        public double PowerFinishMin { get; set; }
+        public double AllFinishMin { get; set; }
 
-        public float CtrlFinish { get; set; }
-        public float PowerFinish { get; set; }
-        public float AllFinish { get; set; }
+        public double CtrlFinish { get; set; }
+        public double PowerFinish { get; set; }
+        public double AllFinish { get; set; }
 
-        public float KK1 { get; set; }
-        public float KK2 { get; set; }
-        public float KK3 { get; set; }
-        public float KK4 { get; set; }
+        public double KK1 { get; set; }
+        public double KK2 { get; set; }
+        public double KK3 { get; set; }
+        public double KK4 { get; set; }
 
-        public float CapRate1 { get; set; }
-        public float CapRate21 { get; set; }
-        public float CapRate22 { get; set; }
-        public float CapRate31 { get; set; }
-        public float CapRate32 { get; set; }
-        public float CapRate33 { get; set; }
-        public float CapRate4 { get; set; }
+        public double CapRate1 { get; set; }
+        public double CapRate21 { get; set; }
+        public double CapRate22 { get; set; }
+        public double CapRate31 { get; set; }
+        public double CapRate32 { get; set; }
+        public double CapRate33 { get; set; }
+        public double CapRate4 { get; set; }
 
-        public float I1 { get; set; }
+        public double I1 { get; set; }
 
-        public float I21 { get; set; }
-        public float I22 { get; set; }
-        public float I31 { get; set; }
-        public float I32 { get; set; }
-        public float I33 { get; set; }
-        public float I4 { get; set; }
+        public double I21 { get; set; }
+        public double I22 { get; set; }
+        public double I31 { get; set; }
+        public double I32 { get; set; }
+        public double I33 { get; set; }
+        public double I4 { get; set; }
 
-        public float CalCap1 { get; set; }
-        public float CalCap2 { get; set; }
-        public float CalCap3 { get; set; }
-        public float CalCap4 { get; set; }
+        public double CalCap1 { get; set; }
+        public double CalCap2 { get; set; }
+        public double CalCap3 { get; set; }
+        public double CalCap4 { get; set; }
 
-        public float MaxCap { get; set; }
+        public double MaxCap { get; set; }
 
-        public float ChooseCap { get; set; }
+        public double ChooseCap { get; set; }
 
     }
 }

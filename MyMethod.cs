@@ -31,11 +31,11 @@ using System.Windows.Forms;
             return (DateTime)obj;
         }
 
-        public static float str2f(string str)
+        public static double str2double(string str)
         {
             try
             {
-                float result = float.Parse(str);
+                double result = double.Parse(str);
                 return result;
             }
             catch
@@ -43,11 +43,11 @@ using System.Windows.Forms;
                 return 0;
             }
         }
-        public static float obj2f(Object obj)
+        public static double obj2f(Object obj)
         {
             try
             {
-                float result = float.Parse(obj.ToString());
+                double result = double.Parse(obj.ToString());
                 return result;
             }
             catch

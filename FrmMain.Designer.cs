@@ -384,6 +384,7 @@
             this.treeList.OptionsMenu.ShowAutoFilterRowItem = false;
             this.treeList.Size = new System.Drawing.Size(986, 232);
             this.treeList.TabIndex = 0;
+            this.treeList.ValidatingEditor += new DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventHandler(this.treeList_ValidatingEditor);
             this.treeList.CellValueChanged += new DevExpress.XtraTreeList.CellValueChangedEventHandler(this.treeList_CellValueChanged);
             this.treeList.ShowingEditor += new System.ComponentModel.CancelEventHandler(this.treeList_ShowingEditor);
             this.treeList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.treeList_KeyDown);
@@ -954,7 +955,7 @@
             // tbCtrlFinishMin
             // 
             this.tbCtrlFinishMin.Enabled = false;
-            this.tbCtrlFinishMin.Location = new System.Drawing.Point(535, 250);
+            this.tbCtrlFinishMin.Location = new System.Drawing.Point(545, 280);
             this.tbCtrlFinishMin.Name = "tbCtrlFinishMin";
             this.tbCtrlFinishMin.Properties.ReadOnly = true;
             this.tbCtrlFinishMin.Size = new System.Drawing.Size(63, 20);
@@ -963,7 +964,7 @@
             // 
             // tbCtrlFinish
             // 
-            this.tbCtrlFinish.Location = new System.Drawing.Point(863, 250);
+            this.tbCtrlFinish.Location = new System.Drawing.Point(873, 280);
             this.tbCtrlFinish.Name = "tbCtrlFinish";
             this.tbCtrlFinish.Properties.Mask.EditMask = "n";
             this.tbCtrlFinish.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
@@ -974,7 +975,7 @@
             // tbPowerFinishMin
             // 
             this.tbPowerFinishMin.Enabled = false;
-            this.tbPowerFinishMin.Location = new System.Drawing.Point(535, 274);
+            this.tbPowerFinishMin.Location = new System.Drawing.Point(545, 304);
             this.tbPowerFinishMin.Name = "tbPowerFinishMin";
             this.tbPowerFinishMin.Properties.ReadOnly = true;
             this.tbPowerFinishMin.Size = new System.Drawing.Size(63, 20);
@@ -983,7 +984,7 @@
             // 
             // tbPowerFinish
             // 
-            this.tbPowerFinish.Location = new System.Drawing.Point(863, 274);
+            this.tbPowerFinish.Location = new System.Drawing.Point(873, 304);
             this.tbPowerFinish.Name = "tbPowerFinish";
             this.tbPowerFinish.Properties.Mask.EditMask = "n";
             this.tbPowerFinish.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
@@ -993,7 +994,7 @@
             // 
             // tbAllFinish
             // 
-            this.tbAllFinish.Location = new System.Drawing.Point(863, 298);
+            this.tbAllFinish.Location = new System.Drawing.Point(873, 328);
             this.tbAllFinish.Name = "tbAllFinish";
             this.tbAllFinish.Properties.Mask.EditMask = "n";
             this.tbAllFinish.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
@@ -1004,7 +1005,7 @@
             // tbAllFinishMin
             // 
             this.tbAllFinishMin.Enabled = false;
-            this.tbAllFinishMin.Location = new System.Drawing.Point(535, 298);
+            this.tbAllFinishMin.Location = new System.Drawing.Point(545, 328);
             this.tbAllFinishMin.Name = "tbAllFinishMin";
             this.tbAllFinishMin.Properties.ReadOnly = true;
             this.tbAllFinishMin.Size = new System.Drawing.Size(63, 20);
@@ -1014,7 +1015,7 @@
             // tbI1
             // 
             this.tbI1.Enabled = false;
-            this.tbI1.Location = new System.Drawing.Point(177, 407);
+            this.tbI1.Location = new System.Drawing.Point(177, 494);
             this.tbI1.Name = "tbI1";
             this.tbI1.Properties.ReadOnly = true;
             this.tbI1.Size = new System.Drawing.Size(64, 20);
@@ -1024,7 +1025,7 @@
             // tbCalCap1
             // 
             this.tbCalCap1.Enabled = false;
-            this.tbCalCap1.Location = new System.Drawing.Point(177, 431);
+            this.tbCalCap1.Location = new System.Drawing.Point(177, 518);
             this.tbCalCap1.Name = "tbCalCap1";
             this.tbCalCap1.Properties.ReadOnly = true;
             this.tbCalCap1.Size = new System.Drawing.Size(64, 20);
@@ -1034,7 +1035,7 @@
             // tbCalCap2
             // 
             this.tbCalCap2.Enabled = false;
-            this.tbCalCap2.Location = new System.Drawing.Point(400, 431);
+            this.tbCalCap2.Location = new System.Drawing.Point(400, 518);
             this.tbCalCap2.Name = "tbCalCap2";
             this.tbCalCap2.Properties.ReadOnly = true;
             this.tbCalCap2.Size = new System.Drawing.Size(160, 20);
@@ -1044,7 +1045,7 @@
             // tbCalCap3
             // 
             this.tbCalCap3.Enabled = false;
-            this.tbCalCap3.Location = new System.Drawing.Point(719, 431);
+            this.tbCalCap3.Location = new System.Drawing.Point(719, 518);
             this.tbCalCap3.Name = "tbCalCap3";
             this.tbCalCap3.Properties.ReadOnly = true;
             this.tbCalCap3.Size = new System.Drawing.Size(256, 20);
@@ -1054,7 +1055,7 @@
             // tbCalCap4
             // 
             this.tbCalCap4.Enabled = false;
-            this.tbCalCap4.Location = new System.Drawing.Point(1134, 431);
+            this.tbCalCap4.Location = new System.Drawing.Point(1134, 518);
             this.tbCalCap4.Name = "tbCalCap4";
             this.tbCalCap4.Properties.ReadOnly = true;
             this.tbCalCap4.Size = new System.Drawing.Size(64, 20);
@@ -1064,7 +1065,7 @@
             // tbMaxCap
             // 
             this.tbMaxCap.Enabled = false;
-            this.tbMaxCap.Location = new System.Drawing.Point(177, 455);
+            this.tbMaxCap.Location = new System.Drawing.Point(177, 542);
             this.tbMaxCap.Name = "tbMaxCap";
             this.tbMaxCap.Properties.ReadOnly = true;
             this.tbMaxCap.Size = new System.Drawing.Size(1021, 20);
@@ -1073,7 +1074,7 @@
             // 
             // tbChooseCap
             // 
-            this.tbChooseCap.Location = new System.Drawing.Point(177, 479);
+            this.tbChooseCap.Location = new System.Drawing.Point(177, 566);
             this.tbChooseCap.Name = "tbChooseCap";
             this.tbChooseCap.Properties.Mask.EditMask = "\\d+(.\\d+)?";
             this.tbChooseCap.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
@@ -1084,7 +1085,7 @@
             // tbI21
             // 
             this.tbI21.Enabled = false;
-            this.tbI21.Location = new System.Drawing.Point(400, 407);
+            this.tbI21.Location = new System.Drawing.Point(400, 494);
             this.tbI21.Name = "tbI21";
             this.tbI21.Properties.ReadOnly = true;
             this.tbI21.Size = new System.Drawing.Size(78, 20);
@@ -1094,9 +1095,8 @@
             // tbI22
             // 
             this.tbI22.Enabled = false;
-            this.tbI22.Location = new System.Drawing.Point(482, 407);
+            this.tbI22.Location = new System.Drawing.Point(482, 494);
             this.tbI22.Name = "tbI22";
-            this.tbI22.Properties.ReadOnly = true;
             this.tbI22.Size = new System.Drawing.Size(78, 20);
             this.tbI22.StyleController = this.layoutControl2;
             this.tbI22.TabIndex = 47;
@@ -1104,7 +1104,7 @@
             // tbI31
             // 
             this.tbI31.Enabled = false;
-            this.tbI31.Location = new System.Drawing.Point(719, 407);
+            this.tbI31.Location = new System.Drawing.Point(719, 494);
             this.tbI31.Name = "tbI31";
             this.tbI31.Properties.ReadOnly = true;
             this.tbI31.Size = new System.Drawing.Size(85, 20);
@@ -1114,7 +1114,7 @@
             // tbI32
             // 
             this.tbI32.Enabled = false;
-            this.tbI32.Location = new System.Drawing.Point(808, 407);
+            this.tbI32.Location = new System.Drawing.Point(808, 494);
             this.tbI32.Name = "tbI32";
             this.tbI32.Properties.ReadOnly = true;
             this.tbI32.Size = new System.Drawing.Size(85, 20);
@@ -1124,7 +1124,7 @@
             // tbI33
             // 
             this.tbI33.Enabled = false;
-            this.tbI33.Location = new System.Drawing.Point(897, 407);
+            this.tbI33.Location = new System.Drawing.Point(897, 494);
             this.tbI33.Name = "tbI33";
             this.tbI33.Properties.ReadOnly = true;
             this.tbI33.Size = new System.Drawing.Size(78, 20);
@@ -1134,7 +1134,7 @@
             // tbI4
             // 
             this.tbI4.Enabled = false;
-            this.tbI4.Location = new System.Drawing.Point(1134, 407);
+            this.tbI4.Location = new System.Drawing.Point(1134, 494);
             this.tbI4.Name = "tbI4";
             this.tbI4.Properties.ReadOnly = true;
             this.tbI4.Size = new System.Drawing.Size(64, 20);
@@ -1143,7 +1143,7 @@
             // 
             // labelControl13
             // 
-            this.labelControl13.Location = new System.Drawing.Point(177, 389);
+            this.labelControl13.Location = new System.Drawing.Point(177, 476);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(24, 14);
             this.labelControl13.StyleController = this.layoutControl2;
@@ -1152,7 +1152,7 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(400, 389);
+            this.labelControl5.Location = new System.Drawing.Point(400, 476);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(24, 14);
             this.labelControl5.StyleController = this.layoutControl2;
@@ -1161,7 +1161,7 @@
             // 
             // labelControl10
             // 
-            this.labelControl10.Location = new System.Drawing.Point(482, 389);
+            this.labelControl10.Location = new System.Drawing.Point(482, 476);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(24, 14);
             this.labelControl10.StyleController = this.layoutControl2;
@@ -1170,7 +1170,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(719, 389);
+            this.labelControl1.Location = new System.Drawing.Point(719, 476);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(24, 14);
             this.labelControl1.StyleController = this.layoutControl2;
@@ -1179,7 +1179,7 @@
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(808, 389);
+            this.labelControl8.Location = new System.Drawing.Point(808, 476);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(24, 14);
             this.labelControl8.StyleController = this.layoutControl2;
@@ -1188,7 +1188,7 @@
             // 
             // labelControl14
             // 
-            this.labelControl14.Location = new System.Drawing.Point(897, 389);
+            this.labelControl14.Location = new System.Drawing.Point(897, 476);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(24, 14);
             this.labelControl14.StyleController = this.layoutControl2;
@@ -1197,7 +1197,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(1134, 389);
+            this.labelControl2.Location = new System.Drawing.Point(1134, 476);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(24, 14);
             this.labelControl2.StyleController = this.layoutControl2;
@@ -1206,7 +1206,7 @@
             // 
             // tbCapRate1
             // 
-            this.tbCapRate1.Location = new System.Drawing.Point(177, 365);
+            this.tbCapRate1.Location = new System.Drawing.Point(177, 452);
             this.tbCapRate1.Name = "tbCapRate1";
             this.tbCapRate1.Properties.Mask.EditMask = "\\d+(.\\d+)?";
             this.tbCapRate1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
@@ -1217,7 +1217,7 @@
             // 
             // tbCapRate21
             // 
-            this.tbCapRate21.Location = new System.Drawing.Point(400, 365);
+            this.tbCapRate21.Location = new System.Drawing.Point(400, 452);
             this.tbCapRate21.Name = "tbCapRate21";
             this.tbCapRate21.Properties.Mask.EditMask = "\\d+(.\\d+)?";
             this.tbCapRate21.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
@@ -1228,7 +1228,7 @@
             // 
             // tbCapRate22
             // 
-            this.tbCapRate22.Location = new System.Drawing.Point(482, 365);
+            this.tbCapRate22.Location = new System.Drawing.Point(482, 452);
             this.tbCapRate22.Name = "tbCapRate22";
             this.tbCapRate22.Properties.Mask.EditMask = "\\d+(.\\d+)?";
             this.tbCapRate22.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
@@ -1239,7 +1239,7 @@
             // 
             // tbCapRate31
             // 
-            this.tbCapRate31.Location = new System.Drawing.Point(719, 365);
+            this.tbCapRate31.Location = new System.Drawing.Point(719, 452);
             this.tbCapRate31.Name = "tbCapRate31";
             this.tbCapRate31.Properties.Mask.EditMask = "\\d+(.\\d+)?";
             this.tbCapRate31.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
@@ -1250,7 +1250,7 @@
             // 
             // tbCapRate32
             // 
-            this.tbCapRate32.Location = new System.Drawing.Point(808, 365);
+            this.tbCapRate32.Location = new System.Drawing.Point(808, 452);
             this.tbCapRate32.Name = "tbCapRate32";
             this.tbCapRate32.Properties.Mask.EditMask = "\\d+(.\\d+)?";
             this.tbCapRate32.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
@@ -1261,7 +1261,7 @@
             // 
             // tbCapRate33
             // 
-            this.tbCapRate33.Location = new System.Drawing.Point(897, 365);
+            this.tbCapRate33.Location = new System.Drawing.Point(897, 452);
             this.tbCapRate33.Name = "tbCapRate33";
             this.tbCapRate33.Properties.Mask.EditMask = "\\d+(.\\d+)?";
             this.tbCapRate33.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
@@ -1272,7 +1272,7 @@
             // 
             // tbCapRate4
             // 
-            this.tbCapRate4.Location = new System.Drawing.Point(1134, 365);
+            this.tbCapRate4.Location = new System.Drawing.Point(1134, 452);
             this.tbCapRate4.Name = "tbCapRate4";
             this.tbCapRate4.Properties.Mask.EditMask = "\\d+(.\\d+)?";
             this.tbCapRate4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
@@ -1283,7 +1283,7 @@
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(177, 347);
+            this.labelControl9.Location = new System.Drawing.Point(177, 434);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(64, 14);
             this.labelControl9.StyleController = this.layoutControl2;
@@ -1292,7 +1292,7 @@
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(400, 347);
+            this.labelControl11.Location = new System.Drawing.Point(400, 434);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(78, 14);
             this.labelControl11.StyleController = this.layoutControl2;
@@ -1301,7 +1301,7 @@
             // 
             // labelControl12
             // 
-            this.labelControl12.Location = new System.Drawing.Point(482, 347);
+            this.labelControl12.Location = new System.Drawing.Point(482, 434);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(78, 14);
             this.labelControl12.StyleController = this.layoutControl2;
@@ -1310,7 +1310,7 @@
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(719, 347);
+            this.labelControl6.Location = new System.Drawing.Point(719, 434);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(85, 14);
             this.labelControl6.StyleController = this.layoutControl2;
@@ -1319,7 +1319,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(808, 347);
+            this.labelControl4.Location = new System.Drawing.Point(808, 434);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(85, 14);
             this.labelControl4.StyleController = this.layoutControl2;
@@ -1328,7 +1328,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(897, 347);
+            this.labelControl3.Location = new System.Drawing.Point(897, 434);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(78, 14);
             this.labelControl3.StyleController = this.layoutControl2;
@@ -1337,7 +1337,7 @@
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(1134, 347);
+            this.labelControl7.Location = new System.Drawing.Point(1134, 434);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(64, 14);
             this.labelControl7.StyleController = this.layoutControl2;
@@ -1348,7 +1348,7 @@
             // 
             this.tbKk1.EditValue = "1.4";
             this.tbKk1.Enabled = false;
-            this.tbKk1.Location = new System.Drawing.Point(177, 323);
+            this.tbKk1.Location = new System.Drawing.Point(177, 410);
             this.tbKk1.Name = "tbKk1";
             this.tbKk1.Properties.ReadOnly = true;
             this.tbKk1.Size = new System.Drawing.Size(64, 20);
@@ -1359,7 +1359,7 @@
             // 
             this.tbKk2.EditValue = "1.4";
             this.tbKk2.Enabled = false;
-            this.tbKk2.Location = new System.Drawing.Point(400, 323);
+            this.tbKk2.Location = new System.Drawing.Point(400, 410);
             this.tbKk2.Name = "tbKk2";
             this.tbKk2.Properties.ReadOnly = true;
             this.tbKk2.Size = new System.Drawing.Size(160, 20);
@@ -1370,7 +1370,7 @@
             // 
             this.tbKk3.EditValue = "1.4";
             this.tbKk3.Enabled = false;
-            this.tbKk3.Location = new System.Drawing.Point(719, 323);
+            this.tbKk3.Location = new System.Drawing.Point(719, 410);
             this.tbKk3.Name = "tbKk3";
             this.tbKk3.Properties.ReadOnly = true;
             this.tbKk3.Size = new System.Drawing.Size(256, 20);
@@ -1380,7 +1380,7 @@
             // tbKk4
             // 
             this.tbKk4.EditValue = "1.4";
-            this.tbKk4.Location = new System.Drawing.Point(1134, 323);
+            this.tbKk4.Location = new System.Drawing.Point(1134, 410);
             this.tbKk4.Name = "tbKk4";
             this.tbKk4.Properties.ReadOnly = true;
             this.tbKk4.Size = new System.Drawing.Size(64, 20);
@@ -1400,7 +1400,7 @@
             this.Root6});
             this.Root2.Location = new System.Drawing.Point(0, 0);
             this.Root2.Name = "Root";
-            this.Root2.Size = new System.Drawing.Size(1220, 521);
+            this.Root2.Size = new System.Drawing.Size(1220, 608);
             this.Root2.Text = "蓄电池计算选择";
             this.Root2.TextLocation = DevExpress.Utils.Locations.Default;
             // 
@@ -1640,7 +1640,6 @@
             this.Root5.CustomizationFormText = "2.蓄电池均衡充电电压选择";
             this.Root5.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.Root5.ExpandButtonVisible = true;
-            this.Root5.Expanded = false;
             this.Root5.ExpandOnDoubleClick = true;
             this.Root5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem14,
@@ -1657,7 +1656,7 @@
             this.emptySpaceItem7});
             this.Root5.Location = new System.Drawing.Point(0, 218);
             this.Root5.Name = "Root5";
-            this.Root5.Size = new System.Drawing.Size(1200, 25);
+            this.Root5.Size = new System.Drawing.Size(1200, 112);
             this.Root5.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.Root5.Text = "3.蓄电池放电终止电压选择";
             this.Root5.TextLocation = DevExpress.Utils.Locations.Default;
@@ -1838,7 +1837,7 @@
             this.simpleLabelItem2,
             this.simpleLabelItem3,
             this.simpleLabelItem4});
-            this.Root6.Location = new System.Drawing.Point(0, 243);
+            this.Root6.Location = new System.Drawing.Point(0, 330);
             this.Root6.Name = "Root6";
             this.Root6.Size = new System.Drawing.Size(1200, 238);
             this.Root6.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
@@ -2331,7 +2330,7 @@
             this.Controls.Add(this.layoutControl1);
             this.Name = "FrmMain";
             this.ShowIcon = false;
-            this.Text = "直流系统蓄电池选择";
+            this.Text = "直流系统蓄电池选择试用版";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmMain_KeyDown);
