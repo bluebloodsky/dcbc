@@ -169,8 +169,8 @@ namespace DcBatteryChoose
             workbook = new HSSFWorkbook(stream);
             ISheet sheet = workbook.GetSheetAt(0);
             IRow row11 = sheet.GetRow(0);
-            row11.GetCell(4).SetCellValue(load.StdVol);
-            row11.GetCell(7).SetCellValue(load.BarNum);
+            row11.GetCell(3).SetCellValue(load.StdVol);
+            row11.GetCell(6).SetCellValue(load.BarNum);
 
             IRow rowTemplate = sheet.GetRow(5);
             IRow rowBold = sheet.GetRow(6);
