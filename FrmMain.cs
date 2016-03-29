@@ -130,11 +130,9 @@ namespace DcBatteryChoose
                         break;
                     i++;
                 }
-                sortList.Insert(i, load);
-            
+                sortList.Insert(i, load);            
             }
-            return sortList;
-        
+            return sortList;        
         }
 
         private void FrmMain_KeyDown(object sender, KeyEventArgs e)
@@ -241,11 +239,11 @@ namespace DcBatteryChoose
             {
                 TreeList tree = sender as TreeList;
                 TreeListNode node = tree.FocusedNode;
-                double calCap = MyMethod.obj2f(node.GetValue(3));
-                double rate = MyMethod.obj2f(node.GetValue(4));
-                node.SetValue(6, calCap * rate);
+                double calCap = MyMethod.obj2double(node.GetValue(3));
+                double rate = MyMethod.obj2double(node.GetValue(4));
+                node.SetValue(6, (calCap * rate).ToString("0.000#"));
                 double std_vol = MyMethod.str2double(tbStdVol.Text);
-                node.SetValue(7, calCap * rate * 1000 / std_vol);            
+                node.SetValue(7, (calCap * rate * 1000 / std_vol).ToString("f4"));            
             }
             else if (column > 7)
             {
@@ -254,13 +252,13 @@ namespace DcBatteryChoose
                 double val = 0;
                 foreach (TreeListNode child in parentNode.Nodes)
                 { 
-                    val += MyMethod.obj2f(child.GetValue(column));
+                    val += MyMethod.obj2double(child.GetValue(column));
                 }
                 parentNode.SetValue(column , val);
 
-                double powerTot = MyMethod.obj2f(tree.FindNodeByID(0).GetValue(column));
-                double ctrlTot = MyMethod.obj2f(tree.FindNodeByID(1).GetValue(column));                
-                double randomTot = MyMethod.obj2f(tree.FindNodeByID(2).GetValue(column));
+                double powerTot = MyMethod.obj2double(tree.FindNodeByID(0).GetValue(column));
+                double ctrlTot = MyMethod.obj2double(tree.FindNodeByID(1).GetValue(column));                
+                double randomTot = MyMethod.obj2double(tree.FindNodeByID(2).GetValue(column));
 
                 double tot;
                 int num = MyMethod.str2int(tbBarNum.Text);
@@ -268,7 +266,7 @@ namespace DcBatteryChoose
                     tot = powerTot + ctrlTot + randomTot ;
                 else
                     tot = 0.6f * powerTot + ctrlTot + randomTot ;
-                tree.FindNodeByID(3).SetValue(column , tot);
+                tree.FindNodeByID(3).SetValue(column, tot.ToString("f4"));
 
                 if (column == 9) //j40
                 {

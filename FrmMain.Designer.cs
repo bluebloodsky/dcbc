@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.treeList = new DevExpress.XtraTreeList.TreeList();
             this.treeListBand1 = new DevExpress.XtraTreeList.Columns.TreeListBand();
             this.columnId = new DevExpress.XtraTreeList.Columns.TreeListColumn();
@@ -128,6 +130,7 @@
             this.tbKk2 = new DevExpress.XtraEditors.TextEdit();
             this.tbKk3 = new DevExpress.XtraEditors.TextEdit();
             this.tbKk4 = new DevExpress.XtraEditors.TextEdit();
+            this.imageSlider2 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.Root2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.Root3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -206,6 +209,12 @@
             this.simpleLabelItem2 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.simpleLabelItem3 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.simpleLabelItem4 = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem48 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
+            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem33 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.treeList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -258,6 +267,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbKk2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbKk3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbKk4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
@@ -336,6 +346,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
+            this.layoutControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem33)).BeginInit();
             this.SuspendLayout();
             // 
             // treeList
@@ -382,7 +399,7 @@
             this.treeList.OptionsMenu.EnableColumnMenu = false;
             this.treeList.OptionsMenu.EnableFooterMenu = false;
             this.treeList.OptionsMenu.ShowAutoFilterRowItem = false;
-            this.treeList.Size = new System.Drawing.Size(986, 232);
+            this.treeList.Size = new System.Drawing.Size(1136, 232);
             this.treeList.TabIndex = 0;
             this.treeList.ValidatingEditor += new DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventHandler(this.treeList_ValidatingEditor);
             this.treeList.CellValueChanged += new DevExpress.XtraTreeList.CellValueChangedEventHandler(this.treeList_CellValueChanged);
@@ -695,7 +712,7 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(490, 86, 250, 350);
             this.layoutControl1.Root = this.Root1;
-            this.layoutControl1.Size = new System.Drawing.Size(1010, 300);
+            this.layoutControl1.Size = new System.Drawing.Size(1160, 300);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -706,14 +723,14 @@
             this.tbStdVol.Name = "tbStdVol";
             this.tbStdVol.Properties.Mask.EditMask = "n0";
             this.tbStdVol.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.tbStdVol.Size = new System.Drawing.Size(66, 20);
+            this.tbStdVol.Size = new System.Drawing.Size(96, 20);
             this.tbStdVol.StyleController = this.layoutControl1;
             this.tbStdVol.TabIndex = 1;
             // 
             // tbBarNum
             // 
             this.tbBarNum.EditValue = "2";
-            this.tbBarNum.Location = new System.Drawing.Point(336, 32);
+            this.tbBarNum.Location = new System.Drawing.Point(366, 32);
             this.tbBarNum.Name = "tbBarNum";
             this.tbBarNum.Properties.Mask.EditMask = "n0";
             this.tbBarNum.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
@@ -734,7 +751,7 @@
             this.layoutControlItem1});
             this.Root1.Location = new System.Drawing.Point(0, 0);
             this.Root1.Name = "Root";
-            this.Root1.Size = new System.Drawing.Size(1010, 300);
+            this.Root1.Size = new System.Drawing.Size(1160, 300);
             this.Root1.Text = "阶梯法—负荷统计";
             this.Root1.TextLocation = DevExpress.Utils.Locations.Default;
             // 
@@ -744,7 +761,7 @@
             this.layoutControlItem4.CustomizationFormText = "直流系统标称电压Un/V";
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(197, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(227, 24);
             this.layoutControlItem4.Text = "直流系统标称电压Un/V";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(124, 14);
             // 
@@ -752,9 +769,9 @@
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.CustomizationFormText = "emptySpaceItem1";
-            this.emptySpaceItem3.Location = new System.Drawing.Point(446, 0);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(476, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(544, 24);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(664, 24);
             this.emptySpaceItem3.Text = "emptySpaceItem1";
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -762,7 +779,7 @@
             // 
             this.layoutControlItem5.Control = this.tbBarNum;
             this.layoutControlItem5.CustomizationFormText = "蓄电池组数";
-            this.layoutControlItem5.Location = new System.Drawing.Point(197, 0);
+            this.layoutControlItem5.Location = new System.Drawing.Point(227, 0);
             this.layoutControlItem5.MaxSize = new System.Drawing.Size(249, 24);
             this.layoutControlItem5.MinSize = new System.Drawing.Size(249, 24);
             this.layoutControlItem5.Name = "layoutControlItem5";
@@ -776,7 +793,7 @@
             this.layoutControlItem1.Control = this.treeList;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(990, 236);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1140, 236);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -837,12 +854,13 @@
             this.layoutControl2.Controls.Add(this.tbKk2);
             this.layoutControl2.Controls.Add(this.tbKk3);
             this.layoutControl2.Controls.Add(this.tbKk4);
+            this.layoutControl2.Controls.Add(this.imageSlider2);
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl2.Location = new System.Drawing.Point(0, 300);
+            this.layoutControl2.Location = new System.Drawing.Point(0, 700);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1027, 455, 250, 350);
             this.layoutControl2.Root = this.Root2;
-            this.layoutControl2.Size = new System.Drawing.Size(1010, 185);
+            this.layoutControl2.Size = new System.Drawing.Size(1160, 33);
             this.layoutControl2.TabIndex = 2;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -1387,6 +1405,28 @@
             this.tbKk4.StyleController = this.layoutControl2;
             this.tbKk4.TabIndex = 26;
             // 
+            // imageSlider2
+            // 
+            this.imageSlider2.AllowLooping = true;
+            this.imageSlider2.CurrentImageIndex = 0;
+            this.imageSlider2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider2.Images"))));
+            this.imageSlider2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider2.Images1"))));
+            this.imageSlider2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider2.Images2"))));
+            this.imageSlider2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider2.Images3"))));
+            this.imageSlider2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider2.Images4"))));
+            this.imageSlider2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider2.Images5"))));
+            this.imageSlider2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider2.Images6"))));
+            this.imageSlider2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider2.Images7"))));
+            this.imageSlider2.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider2.Images8"))));
+            this.imageSlider2.LayoutMode = DevExpress.Utils.Drawing.ImageLayoutMode.TopCenter;
+            this.imageSlider2.Location = new System.Drawing.Point(22, 630);
+            this.imageSlider2.Name = "imageSlider2";
+            this.imageSlider2.Size = new System.Drawing.Size(1176, 396);
+            this.imageSlider2.StyleController = this.layoutControl2;
+            this.imageSlider2.TabIndex = 4;
+            this.imageSlider2.Text = "imageSlider1";
+            this.imageSlider2.UseDisabledStatePainter = true;
+            // 
             // Root2
             // 
             this.Root2.CustomizationFormText = "蓄电池计算选择";
@@ -1397,10 +1437,11 @@
             this.Root4,
             this.c,
             this.Root5,
-            this.Root6});
+            this.Root6,
+            this.layoutControlGroup3});
             this.Root2.Location = new System.Drawing.Point(0, 0);
             this.Root2.Name = "Root";
-            this.Root2.Size = new System.Drawing.Size(1220, 608);
+            this.Root2.Size = new System.Drawing.Size(1220, 1048);
             this.Root2.Text = "蓄电池计算选择";
             this.Root2.TextLocation = DevExpress.Utils.Locations.Default;
             // 
@@ -2321,16 +2362,94 @@
             this.simpleLabelItem4.Text = "4.4 随机负荷容量计算\t";
             this.simpleLabelItem4.TextSize = new System.Drawing.Size(207, 14);
             // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.CustomizationFormText = "直流负荷统计计算时间和负荷系数表";
+            this.layoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup3.ExpandButtonVisible = true;
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem48});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 568);
+            this.layoutControlGroup3.Name = "layoutControlGroup3";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(1200, 440);
+            this.layoutControlGroup3.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlGroup3.Text = "表格B6~B14";
+            // 
+            // layoutControlItem48
+            // 
+            this.layoutControlItem48.Control = this.imageSlider2;
+            this.layoutControlItem48.CustomizationFormText = "layoutControlItem33";
+            this.layoutControlItem48.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem48.MinSize = new System.Drawing.Size(54, 400);
+            this.layoutControlItem48.Name = "layoutControlItem48";
+            this.layoutControlItem48.Size = new System.Drawing.Size(1180, 400);
+            this.layoutControlItem48.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem48.Text = "layoutControlItem33";
+            this.layoutControlItem48.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem48.TextVisible = false;
+            // 
+            // layoutControl3
+            // 
+            this.layoutControl3.AutoSize = true;
+            this.layoutControl3.Controls.Add(this.imageSlider1);
+            this.layoutControl3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.layoutControl3.Location = new System.Drawing.Point(0, 300);
+            this.layoutControl3.MaximumSize = new System.Drawing.Size(0, 400);
+            this.layoutControl3.Name = "layoutControl3";
+            this.layoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(-8, -8, 1378, 780);
+            this.layoutControl3.Root = this.layoutControlGroup1;
+            this.layoutControl3.Size = new System.Drawing.Size(1160, 400);
+            this.layoutControl3.TabIndex = 0;
+            this.layoutControl3.Text = "layoutControl3";
+            // 
+            // imageSlider1
+            // 
+            this.imageSlider1.AllowLooping = true;
+            this.imageSlider1.CurrentImageIndex = 0;
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images1"))));
+            this.imageSlider1.LayoutMode = DevExpress.Utils.Drawing.ImageLayoutMode.TopCenter;
+            this.imageSlider1.Location = new System.Drawing.Point(12, 32);
+            this.imageSlider1.Name = "imageSlider1";
+            this.imageSlider1.Size = new System.Drawing.Size(1119, 706);
+            this.imageSlider1.StyleController = this.layoutControl3;
+            this.imageSlider1.TabIndex = 4;
+            this.imageSlider1.Text = "imageSlider1";
+            this.imageSlider1.UseDisabledStatePainter = true;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.ExpandButtonVisible = true;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem33});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1143, 750);
+            this.layoutControlGroup1.Text = "直流负荷统计计算时间和负荷系数表";
+            // 
+            // layoutControlItem33
+            // 
+            this.layoutControlItem33.Control = this.imageSlider1;
+            this.layoutControlItem33.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem33.MinSize = new System.Drawing.Size(54, 710);
+            this.layoutControlItem33.Name = "layoutControlItem33";
+            this.layoutControlItem33.Size = new System.Drawing.Size(1123, 710);
+            this.layoutControlItem33.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem33.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem33.TextVisible = false;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 485);
+            this.ClientSize = new System.Drawing.Size(1160, 733);
             this.Controls.Add(this.layoutControl2);
+            this.Controls.Add(this.layoutControl3);
             this.Controls.Add(this.layoutControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMain";
-            this.ShowIcon = false;
-            this.Text = "直流系统蓄电池选择试用版";
+            this.Text = "科咖姆直流系统蓄电池选择";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmMain_KeyDown);
@@ -2386,6 +2505,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbKk2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbKk3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbKk4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -2464,6 +2584,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).EndInit();
+            this.layoutControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem33)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2649,6 +2776,13 @@
         private DevExpress.XtraTreeList.Columns.TreeListBand treeListBand18;
         private DevExpress.XtraTreeList.Columns.TreeListBand treeListBand12;
         private DevExpress.XtraTreeList.Columns.TreeListBand treeListBand19;
+        private DevExpress.XtraLayout.LayoutControl layoutControl3;
+        private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem33;
+        private DevExpress.XtraEditors.Controls.ImageSlider imageSlider2;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem48;
 
 
 

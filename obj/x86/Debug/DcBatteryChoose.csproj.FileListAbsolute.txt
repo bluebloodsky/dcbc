@@ -17,3 +17,5 @@ E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\NPOI.dll
 E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\ICSharpCode.SharpZipLib.dll
 E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\NPOI.xml
 E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DcBatteryChoose.exe.config
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DevExpress.DXCore.Controls.Data.v6.3.dll
+E:\001_projects\DcBatteryChoose\DcBatteryChoose\bin\Debug\DevExpress.DXCore.Controls.Utils.v6.3.dll

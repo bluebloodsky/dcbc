@@ -43,7 +43,7 @@ using System.Windows.Forms;
                 return 0;
             }
         }
-        public static double obj2f(Object obj)
+        public static double obj2double(Object obj)
         {
             try
             {
