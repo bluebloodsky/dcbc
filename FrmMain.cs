@@ -20,7 +20,8 @@ namespace DcBatteryChoose
         public FrmMain()
         {
             test();
-            InitializeComponent();
+            DevExpress.XtraSplashScreen.SplashScreenManager.ShowForm(typeof(SplashScreen1));  
+            InitializeComponent();          
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -81,6 +82,8 @@ namespace DcBatteryChoose
                 loadCollection.AddChargeLoadInfo(loadInfo);  
             }          
             treeList.DataSource = loadCollection.LstLoadInfo;
+
+            DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm();
         }
 
         private void treeList_KeyDown(object sender, KeyEventArgs e)
